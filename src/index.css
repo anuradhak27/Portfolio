@@ -1,0 +1,172 @@
+body {
+  font-family: "Raleway", sans-serif;
+  background: radial-gradient(
+    1700px circle at 4.48% 0%,
+    #537aab 0%,
+    #124285 100%
+  );
+  color: #e7e7e7;
+  min-height: 100vh;
+}
+
+#root {
+  --color: #04195f;
+}
+
+.my-logo {
+  color: var(--color);
+}
+
+button {
+  font-size: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 40%;
+  margin: 25px 3% 0;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--color);
+  color: #e7e7e7;
+  height: 50px;
+  cursor: pointer;
+  text-decoration: none;
+  border-style: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  height: 70px;
+  top: 0;
+  transition: all 0.7s;
+}
+
+.NavbarLinks {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 22px;
+  padding-right: 25px;
+}
+
+.NavbarLinks a {
+  padding: 0 16px;
+  color: #c2c1c2;
+  text-decoration: none;
+}
+
+.NavbarLinks a::after {
+  background-color: #ffffff;
+  content: "";
+  position: absolute;
+  height: 3px;
+  left: 5px;
+  bottom: 0;
+  width: 0px;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* .NavbarLinks a:hover:after {
+  width: 90%;
+} */
+
+.NavbarLinks a:hover {
+  color: #ffffff;
+}
+
+.blur {
+  background-color: #01111a8d;
+  backdrop-filter: blur;
+}
+
+.hamburger {
+  display: none;
+}
+
+.Footer {
+  position: relative;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.footerLink {
+  width: 140px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerLink a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 20px;
+}
+
+@media (max-width: 800px) {
+  .Navbar {
+    width: 100%;
+  }
+  .hamburger {
+    display: block;
+    z-index: 3;
+    padding-right: 50px;
+    cursor: pointer;
+  }
+
+  .showNavbar {
+    transform: translateX(30%) !important;
+  }
+
+  .bar {
+    display: block;
+    background-color: #e7e7e7;
+    border-radius: 50px;
+    height: 2.5px;
+    width: 30px;
+    margin: 6px;
+    transition: 0.5s;
+  }
+
+  .NavbarLinks {
+    font-size: 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: fixed;
+    inset: 0 0 0 50%;
+    gap: 50px;
+    background-color: #0c2f69;
+    height: 100vh;
+    padding-top: max(20%, 120px);
+    transform: translateX(100%);
+    transition: 0.5s;
+  }
+
+  .barOne {
+    rotate: -43deg;
+    position: relative;
+    top: 4px;
+    transition: 0.5s;
+  }
+  .barTwo {
+    display: none;
+  }
+
+  .barThree {
+    rotate: 43deg;
+    position: relative;
+    bottom: 4px;
+    transition: 0.5s;
+  }
+}

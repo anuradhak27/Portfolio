@@ -1,0 +1,45 @@
+.Contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 9%;
+}
+
+.Contact input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.contact-form {
+  width: 30%;
+}
+
+.message-field {
+  width: 100%;
+  height: 100px;
+  resize: both;
+  padding: 10px;
+}
+
+.errormsg {
+  border-color: red;
+}
+
+.errorTextmsg {
+  margin: 2px;
+  color: orangered;
+}
+
+.messageLength {
+  margin: 2px;
+  position: relative;
+  text-align: end;
+  right: -22px;
+}
+
+.submission-msg {
+  position: absolute;
+  top: 40%;
+}

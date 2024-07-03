@@ -1,0 +1,25 @@
+.Home {
+  display: flex;
+  justify-content: space-evenly;
+  min-height: 80vh;
+  margin-top: 100px;
+  margin-bottom: -50px;
+  align-items: center;
+}
+
+.Avatar {
+  height: 350px;
+  width: 400px;
+  mix-blend-mode: screen;
+}
+
+.Typewriter {
+  font-size: 2em;
+}
+.Typewriter__wrapper {
+  font-weight: 600;
+}
+
+.name {
+  color: var(--color);
+}
