@@ -11,10 +11,12 @@ body {
 
 #root {
   --color: #04195f;
+  overflow-x: hidden;
 }
 
 .my-logo {
   color: var(--color);
+  cursor: default;
 }
 
 button {
