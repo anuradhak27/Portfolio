@@ -1,7 +1,24 @@
 .about {
   position: relative;
-  text-align: center;
   margin-top: 70px;
   padding: 0 55px;
   font-size: x-large;
+
+  .highlighting {
+    color: var(--color);
+  }
+
+  .subtitle {
+    text-align: left;
+  }
+  .about_paragraph {
+    max-width: 70%;
+    text-align: left;
+  }
+
+  button {
+    text-align: left;
+    width: 200px;
+    margin: 0;
+  }
 }
