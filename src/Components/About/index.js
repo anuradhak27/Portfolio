@@ -1,3 +1,4 @@
+import SkillSet from "../SkillSet";
 import "./About.css";
 import { FaDownload } from "react-icons/fa";
 
@@ -25,6 +26,7 @@ function About() {
         {" "}
         Download <FaDownload />{" "}
       </button>
+      <SkillSet />
     </div>
   );
 }
