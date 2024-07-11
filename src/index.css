@@ -120,8 +120,6 @@ code {
 }
 
 .skill-icon {
-  font-size: 110px;
-  font-size: 110px;
   border: 2px solid var(--color);
   margin: 5px 10px;
   padding: 15px;
@@ -130,6 +128,18 @@ code {
 
 .skillset {
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-icon {
+  font-size: 110px;
+}
+
+.skill-rating {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 10px;
 }
 
 @media (max-width: 800px) {
