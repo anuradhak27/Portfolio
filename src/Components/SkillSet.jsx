@@ -19,9 +19,9 @@ import {
 } from "react-icons/si";
 
 function SkillSet() {
-  const fiveStarSkills = (icon1, ratings = 3) => {
+  const getRatings = (skill, icon1, ratings = 3) => {
     return (
-      <div class="skill-icon">
+      <div title={skill} class="skill-icon">
         <div class="main-icon">{icon1}</div>
         <span class="skill-rating">{getStarRatings(ratings)}</span>
       </div>
@@ -44,18 +44,18 @@ function SkillSet() {
     <div class="skillset-container">
       <h2>Skills</h2>
       <div class="skillset">
-        {fiveStarSkills(<FaHtml5 />, 4)}
-        {fiveStarSkills(<FaCss3 />, 3.5)}
-        {fiveStarSkills(<IoLogoJavascript />, 4)}
-        {fiveStarSkills(<FaReact />, 4)}
-        {fiveStarSkills(<FaGithub />, 3.5)}
-        {fiveStarSkills(<RiAngularjsFill />, 2)}
-        {fiveStarSkills(<SiRedux />, 4)}
-        {fiveStarSkills(<SiMui />, 3)}
-        {fiveStarSkills(<SiWebpack />)}
-        {fiveStarSkills(<SiJest />, 2.5)}
-        {fiveStarSkills(<FaNodeJs />, 2)}
-        {fiveStarSkills(<SiPostgresql />, 2.5)}
+        {getRatings("HTML", <FaHtml5 />, 4)}
+        {getRatings("CSS", <FaCss3 />, 3.5)}
+        {getRatings("JavaScript", <IoLogoJavascript />, 4)}
+        {getRatings("React", <FaReact />, 4)}
+        {getRatings("Github", <FaGithub />, 3.5)}
+        {getRatings("AngulaJs", <RiAngularjsFill />, 2)}
+        {getRatings("AngularJs", <SiRedux />, 4)}
+        {getRatings("Material UI", <SiMui />, 3)}
+        {getRatings("WebPack", <SiWebpack />)}
+        {getRatings("Jest", <SiJest />, 2.5)}
+        {getRatings("Nodejs", <FaNodeJs />, 2)}
+        {getRatings("Postgresql", <SiPostgresql />, 2.5)}
       </div>
     </div>
   );
