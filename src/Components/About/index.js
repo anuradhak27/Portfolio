@@ -22,10 +22,12 @@ function About() {
           for data retrieval and manipulation from databases.
         </p>{" "}
       </p>
-      <button>
-        {" "}
-        Download <FaDownload />{" "}
-      </button>
+      <a href="/Anuradha_Karagupp_5yrs.pdf" download>
+        <button>
+          {" "}
+          Download <FaDownload />{" "}
+        </button>
+      </a>
       <SkillSet />
     </div>
   );

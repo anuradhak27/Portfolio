@@ -44,18 +44,18 @@ function SkillSet() {
     <div class="skillset-container">
       <h2>Skills</h2>
       <div class="skillset">
-        {fiveStarSkills(<FaHtml5 />, 5)}
-        {fiveStarSkills(<FaCss3 />, 4.5)}
-        {fiveStarSkills(<IoLogoJavascript />)}
-        {fiveStarSkills(<FaReact />)}
-        {fiveStarSkills(<FaGithub />)}
-        {fiveStarSkills(<RiAngularjsFill />)}
-        {fiveStarSkills(<SiRedux />)}
-        {fiveStarSkills(<SiMui />)}
+        {fiveStarSkills(<FaHtml5 />, 4)}
+        {fiveStarSkills(<FaCss3 />, 3.5)}
+        {fiveStarSkills(<IoLogoJavascript />, 4)}
+        {fiveStarSkills(<FaReact />, 4)}
+        {fiveStarSkills(<FaGithub />, 3.5)}
+        {fiveStarSkills(<RiAngularjsFill />, 2)}
+        {fiveStarSkills(<SiRedux />, 4)}
+        {fiveStarSkills(<SiMui />, 3)}
         {fiveStarSkills(<SiWebpack />)}
-        {fiveStarSkills(<SiJest />)}
-        {fiveStarSkills(<FaNodeJs />)}
-        {fiveStarSkills(<SiPostgresql />)}
+        {fiveStarSkills(<SiJest />, 2.5)}
+        {fiveStarSkills(<FaNodeJs />, 2)}
+        {fiveStarSkills(<SiPostgresql />, 2.5)}
       </div>
     </div>
   );
