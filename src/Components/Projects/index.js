@@ -1,3 +1,5 @@
+import "./Project.css";
+
 function Projects() {
   return <div className="Projects"></div>;
 }

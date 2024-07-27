@@ -126,6 +126,10 @@ code {
   border-radius: 5px;
 }
 
+/* .skill-icon :hover {
+  font-size: large;
+} */
+
 .skillset {
   text-align: center;
   display: flex;

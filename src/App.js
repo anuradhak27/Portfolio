@@ -9,6 +9,7 @@ import Projects from "./Components/Projects";
 import NavBar from "./Components/NavBar";
 import { CircleLoader } from "react-spinners";
 import Footer from "./Components/Footer";
+import MoveToTop from "./Components/MoveToTop";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -35,6 +36,7 @@ function App() {
       ) : (
         <div>
           <NavBar />
+          <MoveToTop />
           <TransitionGroup>
             <CSSTransition key={location.key} classNames="fade" timeout={500}>
               <Routes location={location}>

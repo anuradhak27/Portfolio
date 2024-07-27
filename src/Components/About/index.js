@@ -17,9 +17,10 @@ function About() {
             application.
           </p>
           My career includes roles as a{" "}
-          <b class="highlighting"> web developer </b> , and currently I am also
-          involved in back-end tasks such as API creation and writing queries
-          for data retrieval and manipulation from databases.
+          <b class="highlighting"> web developer </b> , and currently also
+          involved myself in back-end tasks such as API creation and writing
+          queries for data retrieval and manipulation from databases to expand
+          my skills to become Full-stack developer.
         </p>{" "}
       </p>
       <a href="/Anuradha_Karagupp_5yrs.pdf" download>
