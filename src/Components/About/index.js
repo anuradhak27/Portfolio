@@ -5,7 +5,9 @@ import { FaDownload } from "react-icons/fa";
 function About() {
   return (
     <div className="about">
-      <h2 class="subtitle highlighting">Get to know Me !</h2>
+      <h2 class="subtitle">
+        Get to <span className="highlighting">know</span> Me !
+      </h2>
       <p class="about_paragraph">
         Hi, I'm Anuradha Karaguppi, a skilled professional with total{" "}
         <b class="highlighting">5 years </b>

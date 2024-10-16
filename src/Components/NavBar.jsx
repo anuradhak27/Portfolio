@@ -33,7 +33,6 @@ function NavBar() {
 
   return (
     <nav className={navbarBlur ? "navbar blur" : "navbar"}>
-      <h2 className="my-logo">AK</h2>
       <div className="hamburger" onClick={showMenu}>
         <div className="bar"></div>
         <div className="bar"></div>

@@ -43,7 +43,7 @@ code {
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   position: fixed;
   width: 100%;
@@ -65,10 +65,15 @@ code {
   padding: 0 16px;
   color: #c2c1c2;
   text-decoration: none;
+  transition-property: all;
+}
+
+.NavbarLinks a:hover:after {
+  width: 95%;
 }
 
 .NavbarLinks a::after {
-  background-color: #ffffff;
+  /* background-color: #ffffff;
   content: "";
   position: absolute;
   height: 3px;
@@ -76,12 +81,8 @@ code {
   bottom: 0;
   width: 0px;
   border-radius: 2px;
-  transition: 0.3s;
+  transition: 0.3s; */
 }
-
-/* .NavbarLinks a:hover:after {
-  width: 90%;
-} */
 
 .NavbarLinks a:hover {
   color: #ffffff;
@@ -127,7 +128,9 @@ code {
 }
 
 /* .skill-icon :hover {
-  font-size: large;
+  transform: scale(1.2);
+  background-color: var(--color);
+  border: none;
 } */
 
 .skillset {
